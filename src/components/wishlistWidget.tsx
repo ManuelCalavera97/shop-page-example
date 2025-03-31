@@ -9,11 +9,11 @@ type WishlistWidgetProps = {
 };
 
 const WishlistWidget = ({ productId }: WishlistWidgetProps) => {
-  const { getIdWishlisted, addIdToWishlist, removeIdFromWishlist } =
+  const { getIsIdWishlisted, addIdToWishlist, removeIdFromWishlist } =
     useWishlist();
 
   const handleToggleWishlist = () => {
-    if (getIdWishlisted(productId)) {
+    if (getIsIdWishlisted(productId)) {
       removeIdFromWishlist(productId);
     } else {
       addIdToWishlist(productId);
@@ -22,7 +22,7 @@ const WishlistWidget = ({ productId }: WishlistWidgetProps) => {
 
   return (
     <Button
-      variant={getIdWishlisted(productId) ? "default" : "outline"}
+      variant={getIsIdWishlisted(productId) ? "default" : "outline"}
       size="icon"
       onClick={handleToggleWishlist}
     >

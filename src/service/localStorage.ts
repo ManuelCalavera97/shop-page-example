@@ -1,3 +1,4 @@
+// TODO: Add json parsing validation
 export const getLocalStorageJson = <T>(key: string): T[] => {
   return JSON.parse(localStorage.getItem(key) || "[]");
 };

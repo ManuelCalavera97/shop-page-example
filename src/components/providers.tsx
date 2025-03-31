@@ -3,6 +3,7 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactNode, useState } from "react";
 import { SidebarProvider } from "./ui/sidebar";
+import { WishlistProvider } from "@/hooks/useWishlist";
 
 type ProvidersProps = {
   children: ReactNode;
@@ -22,7 +23,9 @@ const Providers = ({ children }: ProvidersProps) => {
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SidebarProvider defaultOpen={false}>{children}</SidebarProvider>
+      <SidebarProvider defaultOpen={false}>
+        <WishlistProvider>{children}</WishlistProvider>
+      </SidebarProvider>
     </QueryClientProvider>
   );
 };

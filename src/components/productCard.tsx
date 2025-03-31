@@ -35,7 +35,7 @@ const ProductCard = ({
           <strong>Stock:</strong> {stock} items
         </p>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="mt-auto">
         <WishlistWidget productId={id} />
       </CardFooter>
     </Card>
