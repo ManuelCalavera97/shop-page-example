@@ -5,24 +5,11 @@ import ProductCard from "./productCard";
 import { Button } from "./ui/button";
 
 const Products = () => {
-  const {
-    isPending,
-    isFetching,
-    isError,
-    error,
-    data,
-    initialProductsPage,
-    page,
-    setPage,
-    isPlaceholderData,
-  } = useProducts();
-
-  if (isPending) {
-    return <div>Loading</div>;
-  }
+  const { isError, error, data, initialProductsPage, page, setPage } =
+    useProducts();
 
   if (isError) {
-    return <div>Error {error.message}</div>;
+    return <div>Error {error?.message}</div>;
   }
 
   if (data) {
@@ -45,16 +32,15 @@ const Products = () => {
           </Button>
           <Button
             onClick={() => {
-              if (!isPlaceholderData && data.pages > page) {
+              if (data.pages > page) {
                 setPage((old) => old + 1);
               }
             }}
-            disabled={isPlaceholderData || data.pages <= page}
+            disabled={data.pages <= page}
           >
             Next Page
           </Button>
         </div>
-        {isFetching ? <span> Loading...</span> : null}
       </div>
     );
   }

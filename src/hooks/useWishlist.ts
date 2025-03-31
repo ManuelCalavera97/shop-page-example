@@ -11,7 +11,7 @@ import {
   useQueryClient,
 } from "@tanstack/react-query";
 
-export const WISHLIST_LOCAL_STORAGE_KEY = "WISHLIST_LOCAL_STORAGE_KEY";
+export const WISHLIST_IDS_LOCAL_STORAGE_KEY = "WISHLIST_LOCAL_STORAGE_KEY";
 export const WISHLIST_IDS_KEY = "WISHLIST_IDS_KEY";
 export const WISHLIST_PRODUCTS_KEY = "WISHLIST_PRODUCTS_KEY";
 
@@ -20,7 +20,7 @@ const useWishlist = () => {
 
   const { data: wishlistIds = [] } = useQuery({
     queryKey: [WISHLIST_IDS_KEY],
-    queryFn: () => getLocalStorageJson<number>(WISHLIST_LOCAL_STORAGE_KEY),
+    queryFn: () => getLocalStorageJson<number>(WISHLIST_IDS_LOCAL_STORAGE_KEY),
     staleTime: Infinity,
   });
 
@@ -34,14 +34,14 @@ const useWishlist = () => {
   const addIdToWishlist = (productId: number) => {
     if (!wishlistIds.includes(productId)) {
       const updatedWishlist = [...wishlistIds, productId];
-      updateLocalStorageJson(WISHLIST_LOCAL_STORAGE_KEY, updatedWishlist);
+      updateLocalStorageJson(WISHLIST_IDS_LOCAL_STORAGE_KEY, updatedWishlist);
       queryClient.invalidateQueries({ queryKey: [WISHLIST_IDS_KEY] });
     }
   };
 
   const removeIdFromWishlist = (productId: number) => {
     const updatedWishlist = wishlistIds.filter((id) => id !== productId);
-    updateLocalStorageJson(WISHLIST_LOCAL_STORAGE_KEY, updatedWishlist);
+    updateLocalStorageJson(WISHLIST_IDS_LOCAL_STORAGE_KEY, updatedWishlist);
     queryClient.invalidateQueries({ queryKey: [WISHLIST_IDS_KEY] });
   };
 

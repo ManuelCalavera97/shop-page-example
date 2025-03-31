@@ -1,16 +1,15 @@
 "use client";
 
 import { getProducts, INITIAL_PRODUCTS_PAGE } from "@/service/products";
-import { keepPreviousData, useQuery } from "@tanstack/react-query";
+import { useSuspenseQuery } from "@tanstack/react-query";
 import { useState } from "react";
 
 const useProducts = () => {
   const [page, setPage] = useState(INITIAL_PRODUCTS_PAGE);
 
-  const queryProps = useQuery({
+  const queryProps = useSuspenseQuery({
     queryKey: ["products", page],
     queryFn: () => getProducts(page),
-    placeholderData: keepPreviousData,
   });
 
   return {
