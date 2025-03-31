@@ -1,184 +1,189 @@
 {
-  "products": [
-    {
-      "id": 1,
-      "name": "Wireless Headphones",
-      "description": "Noise-canceling over-ear headphones with Bluetooth connectivity.",
-      "price": 99.99,
-      "currency": "USD",
-      "stock": 25,
-      "category": "Electronics"
-    },
-    {
-      "id": 2,
-      "name": "Mechanical Keyboard",
-      "description": "RGB backlit mechanical keyboard with tactile switches.",
-      "price": 79.99,
-      "currency": "USD",
-      "stock": 15,
-      "category": "Computer Accessories"
-    },
-    {
-      "id": 3,
-      "name": "Smartphone Stand",
-      "description": "Adjustable aluminum stand for smartphones and tablets.",
-      "price": 19.99,
-      "currency": "USD",
-      "stock": 50,
-      "category": "Accessories"
-    },
-    {
-      "id": 4,
-      "name": "Gaming Mouse",
-      "description": "Ergonomic gaming mouse with customizable buttons and DPI settings.",
-      "price": 49.99,
-      "currency": "USD",
-      "stock": 30,
-      "category": "Computer Accessories"
-    },
-    {
-      "id": 5,
-      "name": "USB-C Hub",
-      "description": "Multi-port USB-C hub with HDMI, USB, and SD card reader.",
-      "price": 39.99,
-      "currency": "USD",
-      "stock": 20,
-      "category": "Computer Accessories"
-    },
-    {
-      "id": 6,
-      "name": "Portable Charger",
-      "description": "10000mAh power bank with fast charging capabilities.",
-      "price": 29.99,
-      "currency": "USD",
-      "stock": 40,
-      "category": "Electronics"
-    },
-    {
-      "id": 7,
-      "name": "Wireless Earbuds",
-      "description": "True wireless earbuds with noise cancellation.",
-      "price": 89.99,
-      "currency": "USD",
-      "stock": 35,
-      "category": "Electronics"
-    },
-    {
-      "id": 8,
-      "name": "Smartwatch",
-      "description": "Fitness tracking smartwatch with heart rate monitor.",
-      "price": 199.99,
-      "currency": "USD",
-      "stock": 10,
-      "category": "Wearables"
-    },
-    {
-      "id": 9,
-      "name": "Bluetooth Speaker",
-      "description": "Waterproof Bluetooth speaker with deep bass.",
-      "price": 59.99,
-      "currency": "USD",
-      "stock": 22,
-      "category": "Electronics"
-    },
-    {
-      "id": 10,
-      "name": "Webcam",
-      "description": "Full HD 1080p webcam with built-in microphone.",
-      "price": 45.99,
-      "currency": "USD",
-      "stock": 18,
-      "category": "Computer Accessories"
-    },
-    {
-      "id": 11,
-      "name": "External Hard Drive",
-      "description": "1TB portable external hard drive with USB 3.0 support.",
-      "price": 89.99,
-      "currency": "USD",
-      "stock": 25,
-      "category": "Storage"
-    },
-    {
-      "id": 12,
-      "name": "Wireless Router",
-      "description": "Dual-band WiFi 6 router with high-speed connectivity.",
-      "price": 129.99,
-      "currency": "USD",
-      "stock": 12,
-      "category": "Networking"
-    },
-    {
-      "id": 13,
-      "name": "Laptop Stand",
-      "description": "Ergonomic adjustable laptop stand with ventilation.",
-      "price": 34.99,
-      "currency": "USD",
-      "stock": 28,
-      "category": "Accessories"
-    },
-    {
-      "id": 14,
-      "name": "Smart Light Bulb",
-      "description": "WiFi-enabled smart light bulb with adjustable color temperature.",
-      "price": 24.99,
-      "currency": "USD",
-      "stock": 40,
-      "category": "Smart Home"
-    },
-    {
-      "id": 15,
-      "name": "HDMI Cable",
-      "description": "High-speed HDMI cable with gold-plated connectors.",
-      "price": 14.99,
-      "currency": "USD",
-      "stock": 60,
-      "category": "Cables"
-    },
-    {
-      "id": 16,
-      "name": "Monitor",
-      "description": "27-inch Full HD monitor with IPS panel.",
-      "price": 199.99,
-      "currency": "USD",
-      "stock": 8,
-      "category": "Displays"
-    },
-    {
-      "id": 17,
-      "name": "VR Headset",
-      "description": "Virtual reality headset compatible with multiple platforms.",
-      "price": 299.99,
-      "currency": "USD",
-      "stock": 6,
-      "category": "Gaming"
-    },
-    {
-      "id": 18,
-      "name": "Desk Lamp",
-      "description": "LED desk lamp with adjustable brightness and USB charging port.",
-      "price": 29.99,
-      "currency": "USD",
-      "stock": 33,
-      "category": "Home Office"
-    },
-    {
-      "id": 19,
-      "name": "Graphics Tablet",
-      "description": "Drawing tablet with pressure-sensitive pen for digital artists.",
-      "price": 159.99,
-      "currency": "USD",
-      "stock": 14,
-      "category": "Creative Tools"
-    },
-    {
-      "id": 20,
-      "name": "Noise-Canceling Earplugs",
-      "description": "Reusable high-fidelity earplugs for noise reduction.",
-      "price": 19.99,
-      "currency": "USD",
-      "stock": 50,
-      "category": "Health & Wellness"
-    }
-  ]
+  "pages": 2,
+  "products": {
+    "1": [
+      {
+        "id": 1,
+        "name": "Wireless Headphones",
+        "description": "Noise-canceling over-ear headphones with Bluetooth connectivity.",
+        "price": 99.99,
+        "currency": "USD",
+        "stock": 25,
+        "category": "Electronics"
+      },
+      {
+        "id": 2,
+        "name": "Mechanical Keyboard",
+        "description": "RGB backlit mechanical keyboard with tactile switches.",
+        "price": 79.99,
+        "currency": "USD",
+        "stock": 15,
+        "category": "Computer Accessories"
+      },
+      {
+        "id": 3,
+        "name": "Smartphone Stand",
+        "description": "Adjustable aluminum stand for smartphones and tablets.",
+        "price": 19.99,
+        "currency": "USD",
+        "stock": 50,
+        "category": "Accessories"
+      },
+      {
+        "id": 4,
+        "name": "Gaming Mouse",
+        "description": "Ergonomic gaming mouse with customizable buttons and DPI settings.",
+        "price": 49.99,
+        "currency": "USD",
+        "stock": 30,
+        "category": "Computer Accessories"
+      },
+      {
+        "id": 5,
+        "name": "USB-C Hub",
+        "description": "Multi-port USB-C hub with HDMI, USB, and SD card reader.",
+        "price": 39.99,
+        "currency": "USD",
+        "stock": 20,
+        "category": "Computer Accessories"
+      },
+      {
+        "id": 6,
+        "name": "Portable Charger",
+        "description": "10000mAh power bank with fast charging capabilities.",
+        "price": 29.99,
+        "currency": "USD",
+        "stock": 40,
+        "category": "Electronics"
+      },
+      {
+        "id": 7,
+        "name": "Wireless Earbuds",
+        "description": "True wireless earbuds with noise cancellation.",
+        "price": 89.99,
+        "currency": "USD",
+        "stock": 35,
+        "category": "Electronics"
+      },
+      {
+        "id": 8,
+        "name": "Smartwatch",
+        "description": "Fitness tracking smartwatch with heart rate monitor.",
+        "price": 199.99,
+        "currency": "USD",
+        "stock": 10,
+        "category": "Wearables"
+      },
+      {
+        "id": 9,
+        "name": "Bluetooth Speaker",
+        "description": "Waterproof Bluetooth speaker with deep bass.",
+        "price": 59.99,
+        "currency": "USD",
+        "stock": 22,
+        "category": "Electronics"
+      },
+      {
+        "id": 10,
+        "name": "Webcam",
+        "description": "Full HD 1080p webcam with built-in microphone.",
+        "price": 45.99,
+        "currency": "USD",
+        "stock": 18,
+        "category": "Computer Accessories"
+      }
+    ],
+    "2": [
+      {
+        "id": 11,
+        "name": "External Hard Drive",
+        "description": "1TB portable external hard drive with USB 3.0 support.",
+        "price": 89.99,
+        "currency": "USD",
+        "stock": 25,
+        "category": "Storage"
+      },
+      {
+        "id": 12,
+        "name": "Wireless Router",
+        "description": "Dual-band WiFi 6 router with high-speed connectivity.",
+        "price": 129.99,
+        "currency": "USD",
+        "stock": 12,
+        "category": "Networking"
+      },
+      {
+        "id": 13,
+        "name": "Laptop Stand",
+        "description": "Ergonomic adjustable laptop stand with ventilation.",
+        "price": 34.99,
+        "currency": "USD",
+        "stock": 28,
+        "category": "Accessories"
+      },
+      {
+        "id": 14,
+        "name": "Smart Light Bulb",
+        "description": "WiFi-enabled smart light bulb with adjustable color temperature.",
+        "price": 24.99,
+        "currency": "USD",
+        "stock": 40,
+        "category": "Smart Home"
+      },
+      {
+        "id": 15,
+        "name": "HDMI Cable",
+        "description": "High-speed HDMI cable with gold-plated connectors.",
+        "price": 14.99,
+        "currency": "USD",
+        "stock": 60,
+        "category": "Cables"
+      },
+      {
+        "id": 16,
+        "name": "Monitor",
+        "description": "27-inch Full HD monitor with IPS panel.",
+        "price": 199.99,
+        "currency": "USD",
+        "stock": 8,
+        "category": "Displays"
+      },
+      {
+        "id": 17,
+        "name": "VR Headset",
+        "description": "Virtual reality headset compatible with multiple platforms.",
+        "price": 299.99,
+        "currency": "USD",
+        "stock": 6,
+        "category": "Gaming"
+      },
+      {
+        "id": 18,
+        "name": "Desk Lamp",
+        "description": "LED desk lamp with adjustable brightness and USB charging port.",
+        "price": 29.99,
+        "currency": "USD",
+        "stock": 33,
+        "category": "Home Office"
+      },
+      {
+        "id": 19,
+        "name": "Graphics Tablet",
+        "description": "Drawing tablet with pressure-sensitive pen for digital artists.",
+        "price": 159.99,
+        "currency": "USD",
+        "stock": 14,
+        "category": "Creative Tools"
+      },
+      {
+        "id": 20,
+        "name": "Noise-Canceling Earplugs",
+        "description": "Reusable high-fidelity earplugs for noise reduction.",
+        "price": 19.99,
+        "currency": "USD",
+        "stock": 50,
+        "category": "Health & Wellness"
+      }
+    ]
+  }
 }

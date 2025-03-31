@@ -5,7 +5,7 @@ import WishlistBadge from "./wishlistBadge";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between bg-neutral-700 px-6 py-4 text-white">
+    <header className="bg-background-alt flex items-center justify-between px-6 py-4 text-white">
       <Link href="/" aria-label="Go home" className="flex items-center gap-2">
         <Image
           src={CompanyLogo}
