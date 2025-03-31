@@ -2,6 +2,7 @@
 
 import useProducts from "@/hooks/useProducts";
 import ProductCard from "./productCard";
+import { Button } from "./ui/button";
 
 const Products = () => {
   const {
@@ -27,32 +28,32 @@ const Products = () => {
   if (data) {
     return (
       <div>
-        <h2 className="mb-4 text-xl">Products</h2>
+        <h2 className="mb-4 text-xl font-medium">Products</h2>
         {data.products && (
-          <div className="grid grid-cols-4 gap-4 sm:grid-cols-1 md:grid-cols-3">
+          <div className="lg: grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {data.products.map((product) => (
               <ProductCard key={product.id} {...product} />
             ))}
           </div>
         )}
-
-        <span>Current Page: {page}</span>
-        <button
-          onClick={() => setPage((old) => Math.max(old - 1, 0))}
-          disabled={page === initialProductsPage}
-        >
-          Previous Page
-        </button>
-        <button
-          onClick={() => {
-            if (!isPlaceholderData && data.pages > page) {
-              setPage((old) => old + 1);
-            }
-          }}
-          disabled={isPlaceholderData || data.pages <= page}
-        >
-          Next Page
-        </button>
+        <div className="flex items-center justify-center gap-6 py-6">
+          <Button
+            onClick={() => setPage((old) => Math.max(old - 1, 0))}
+            disabled={page === initialProductsPage}
+          >
+            Previous Page
+          </Button>
+          <Button
+            onClick={() => {
+              if (!isPlaceholderData && data.pages > page) {
+                setPage((old) => old + 1);
+              }
+            }}
+            disabled={isPlaceholderData || data.pages <= page}
+          >
+            Next Page
+          </Button>
+        </div>
         {isFetching ? <span> Loading...</span> : null}
       </div>
     );

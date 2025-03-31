@@ -2,6 +2,7 @@
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactNode, useState } from "react";
+import { SidebarProvider } from "./ui/sidebar";
 
 type ProvidersProps = {
   children: ReactNode;
@@ -20,7 +21,9 @@ const Providers = ({ children }: ProvidersProps) => {
   );
 
   return (
-    <QueryClientProvider client={queryClient}>{children}</QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <SidebarProvider defaultOpen={false}>{children}</SidebarProvider>
+    </QueryClientProvider>
   );
 };
 
