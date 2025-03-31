@@ -32,7 +32,7 @@ const Products = () => {
         {data.products && (
           <div className="lg: grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-4">
             {data.products.map((product) => (
-              <ProductCard key={product.id} {...product} />
+              <ProductCard key={`products-${product.id}`} {...product} />
             ))}
           </div>
         )}

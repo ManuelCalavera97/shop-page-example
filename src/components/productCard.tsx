@@ -7,9 +7,10 @@ import {
   CardHeader,
   CardTitle,
 } from "./ui/card";
-import { Button } from "./ui/button";
+import WishlistWidget from "./wishlistWidget";
 
 const ProductCard = ({
+  id,
   name,
   description,
   price,
@@ -35,7 +36,7 @@ const ProductCard = ({
         </p>
       </CardContent>
       <CardFooter>
-        <Button variant="outline">Favorite</Button>
+        <WishlistWidget productId={id} />
       </CardFooter>
     </Card>
   );
